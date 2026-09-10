@@ -103,7 +103,8 @@ button,summary,a{-webkit-tap-highlight-color:transparent}
 .phone.sm:before{top:15px;width:30px;height:4px}
 .phone.sm .phone-screen{border-radius:18px;padding-top:15px}
 .hero-art{position:relative;display:flex;justify-content:center}
-.hero-art .tile{position:absolute;top:14px;left:calc(50% - 145px - 18px);z-index:2;transform:rotate(-6deg)}
+.annotation{position:absolute;left:calc(50% - 145px - 18px);bottom:80px;z-index:2;max-width:230px;background:var(--paper);border:1px solid var(--stone-200);border-radius:var(--r-md);padding:16px 20px;box-shadow:var(--shadow-md);transform:rotate(-5deg);font-family:var(--font-serif);font-size:20px;font-weight:600;color:var(--ink)}
+.annotation span{display:block;font:700 12px/1 var(--font-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:8px}
 
 /* Vergrößern-Button: liegt auf dem Screen, nicht auf dem Bezel, damit klar
    bleibt, dass er zum Bild gehört und nicht zum Rahmen. */
@@ -289,7 +290,7 @@ h1,h2,h3,a,p,summary{overflow-wrap:break-word}
   .header .store-badge{margin-left:auto}
   .section{padding-block:64px}
   .hero{grid-template-columns:1fr;padding-block:48px 56px;gap:36px}
-  .hero-art .tile{display:none}
+  .hero-art .annotation{display:none}
   .split-heading{grid-template-columns:1fr;gap:24px}
   .situations{grid-template-columns:1fr}
   .preview-grid{grid-template-columns:1fr;gap:24px}
