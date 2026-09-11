@@ -1,5 +1,13 @@
-/* Marcus'Mend — Onepager, Entwurf 2. Fonts vorerst über Google Fonts geladen
-   (siehe HTML <head>) — vor Produktion lokal einbetten, siehe PF-21/PF-09. */
+/* Marcus'Mend — Onepager, Entwurf 2. Fonts lokal eingebettet (assets/fonts/),
+   kein Google-Fonts-Request mehr — siehe PF-21/PF-09. */
+
+@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/inter-latin-variable.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url('assets/fonts/inter-latin-variable.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url('assets/fonts/inter-latin-variable.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:700;font-display:swap;src:url('assets/fonts/inter-latin-variable.woff2') format('woff2')}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:600;font-display:swap;src:url('assets/fonts/playfair-display-latin-normal-variable.woff2') format('woff2')}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:700;font-display:swap;src:url('assets/fonts/playfair-display-latin-normal-variable.woff2') format('woff2')}
+@font-face{font-family:'Playfair Display';font-style:italic;font-weight:600;font-display:swap;src:url('assets/fonts/playfair-display-latin-italic-600.woff2') format('woff2')}
 
 :root{
   --paper:#FAF9F5; --paper-alt:#F3F0E7; --white:#FFFFFF;
@@ -262,7 +270,7 @@ footer{background:var(--paper-alt)}
 .footer-links{display:flex;flex-wrap:wrap;gap:26px;font-size:14px;font-weight:600}
 .footer-links a{text-decoration:none;padding-block:10px;color:var(--nav-blue)}
 .footer-links a:hover{color:var(--nav-blue-deep)}
-.legal{padding-block:34px 64px}
+.legal{padding-block:34px 64px;max-width:640px}
 .legal h2{font-size:22px;margin-bottom:18px}
 .legal-heading{font-size:18px;margin:28px 0 10px;font-family:var(--font-serif)}
 .legal-label{font-size:14px;color:var(--stone-500)}

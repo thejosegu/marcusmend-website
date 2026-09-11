@@ -13,9 +13,6 @@
   <meta property="og:locale" content="de_DE">
   <title>Marcus'Mend – DBT-Skills an deiner Situation üben (Entwurf 2)</title>
   <link rel="icon" type="image/png" href="assets/logo.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -190,9 +187,9 @@
     <nav class="footer-links" aria-label="Rechtliches und Kontakt"><a href="#kontakt">Kontakt</a><a href="#impressum">Impressum</a><a href="#datenschutz">Datenschutz</a><a href="#start">Nach oben ↑</a></nav>
   </div>
   <div class="legal"><h2>Hinweise zur lokalen Vorschau</h2><p class="legal-label">Diese Fassung ist nicht zur öffentlichen Veröffentlichung freigegeben. Die folgenden Hinweise sind keine fertigen Rechtstexte.</p>
-    <section id="kontakt"><h3 class="legal-heading">Kontakt</h3><p class="small">Eine bestätigte Kontaktadresse des Betreibers liegt noch nicht vor. Deshalb gibt es hier keine erfundene E-Mail-Adresse und kein Kontaktformular.</p></section>
-    <section id="impressum"><h3 class="legal-heading">Impressum — noch offen</h3><p class="small">Betreibername, ladungsfähige Anschrift und Kontaktangaben müssen vor Veröffentlichung ergänzt und geprüft werden. Diese Vorschau ersetzt kein vollständiges Impressum.</p></section>
-    <section id="datenschutz"><h3 class="legal-heading">Datenschutz — Vorschauumfang</h3><p class="small">Diese statische Website verwendet keine Analyse-Skripte, Werbepixel oder Browser-Speicher und liest keine Arbeitsdaten der App. Schriftarten werden in diesem Entwurf noch von Google Fonts geladen (siehe Hinweis in Dokument 07/PF-21) — vor Veröffentlichung lokal einzubetten. Bei einer späteren Bereitstellung müssen insbesondere Hosting, Zugriffsprotokolle, Verantwortliche und erforderliche Datenschutzinformationen anhand des tatsächlichen Betriebs geprüft werden. Eine freigegebene Datenschutzerklärung steht noch aus.</p></section>
+    <section id="kontakt"><h3 class="legal-heading">Kontakt</h3><p class="small">Kontaktdaten stehen im <a href="#impressum">Impressum</a>.</p></section>
+    <section id="impressum"><h3 class="legal-heading">Impressum</h3><p class="small">Angaben gemäß § 5 DDG.</p><p class="small"><strong>Marcus – Media Marketing Management</strong><br>Sebastian Günther<br>Rigaer Straße 93<br>10247 Berlin<br>Deutschland</p><p class="small">E-Mail: <a href="#" id="impressum-mail">wird geladen…</a></p><p class="small">Inhaltlich verantwortlich gemäß § 18 Abs. 2 MStV: Sebastian Günther, Anschrift wie oben.</p></section>
+    <section id="datenschutz"><h3 class="legal-heading">Datenschutz</h3><p class="small">Diese Website ist statisch (HTML/CSS), bindet Schriftarten lokal ein und lädt keine Analyse-Skripte, Werbepixel oder sonstigen Drittanbieter-Inhalte nach; sie setzt keine Cookies und liest keine Arbeitsdaten der App. Beim Aufruf verarbeitet der Hosting-Anbieter (Vercel Inc.) automatisch technische Zugriffsdaten wie die IP-Adresse — das ist bei jedem Websitebesuch technisch unvermeidbar. Eine vollständige Datenschutzerklärung mit Rechtsgrundlagen, Speicherdauer und Betroffenenrechten steht noch aus.</p></section>
   </div>
 </footer>
 
@@ -262,6 +259,13 @@
     if (event.key === "ArrowLeft") show(current - 1);
     if (event.key === "ArrowRight") show(current + 1);
   });
+
+  var mailLink = document.getElementById("impressum-mail");
+  if (mailLink) {
+    var user = "j.sebastian.guenther", domain = "gmail.com";
+    mailLink.href = "mailto:" + user + "@" + domain;
+    mailLink.textContent = user + "@" + domain;
+  }
 })();
 </script>
 </body>
