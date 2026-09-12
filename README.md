@@ -14,7 +14,7 @@ Dann `http://127.0.0.1:5190/` aufrufen.
 
 Kontakt, Impressum und Datenschutz sind Reiter mit direkten Hash-Zielen. Inhalte wurden am 2026-09-12 aus `F:\MarcusMood\MarcusSite Coding` übernommen und auf MarcusMend angepasst. Alte TMG-/OS-Verweise und MarcusMood-spezifische App-Funktionen wurden nicht übernommen.
 
-`contact.js` sendet erst nach Absenden an Web3Forms, mit dem bestehenden öffentlichen Formularschlüssel der MarcusMood-Website. Absenderbezeichnung und Betreff nennen MarcusMend. Ob für den Schlüssel Domainbeschränkungen oder zusätzliche Integrationen eingerichtet sind, muss im bestehenden Web3Forms-Konto geprüft werden. Es wurde keine echte Testnachricht verschickt; Validierung, Doppelklickschutz, Erfolgs-/Fehlerbehandlung und JavaScript-Syntax wurden lokal mit simuliertem Versand geprüft (`node --test ../tests/website-contact.test.mjs`).
+`contact.js` sendet erst nach Absenden an Web3Forms, mit dem bestehenden öffentlichen Formularschlüssel der MarcusMood-Website. Absenderbezeichnung und Betreff nennen MarcusMend. Ob für den Schlüssel Domainbeschränkungen oder zusätzliche Integrationen eingerichtet sind, muss im bestehenden Web3Forms-Konto geprüft werden. Es wurde keine echte Testnachricht verschickt; Validierung, Doppelklickschutz, Erfolgs-/Fehlerbehandlung und JavaScript-Syntax wurden lokal mit simuliertem Versand geprüft (`node --test` in diesem Verzeichnis; Test liegt unter `tests/contact.test.mjs`).
 
 Der Nutzer bestätigt am 2026-09-12, dass das Kontaktformular praktisch funktioniert. Ein weiterer Versandtest ist nicht erforderlich. Vercel wird laut Nutzer im kostenlosen Tarif ohne Analytics verwendet. Die frühere Beschreibung oben betrifft ausschließlich die automatisierte Prüfung.
 
